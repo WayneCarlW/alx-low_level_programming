@@ -3,7 +3,7 @@
 /**
  * main - Prints 0-9
  *
- * Returns: Success(0)
+ * Returns: Always 0 (Success)
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 	for (i = 0; i < 10; i++)
 	{
 		putchar(i);
-		putchar("\n");
 	}
+	putchar('\n');
 	return (0);
 }
