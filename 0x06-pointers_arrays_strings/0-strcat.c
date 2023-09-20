@@ -4,7 +4,7 @@
  *
  * @dest: Destination String
  * @src: Source string
- * Return: NULL
+ * Return:Concatenated string
  */
 char *_strcat(char *dest, char *src)
 {
