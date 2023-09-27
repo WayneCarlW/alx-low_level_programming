@@ -29,5 +29,5 @@ int _isy_prime_number(int n, int div)
  */
 int _is_prime_number(int n)
 {
-	return (_isy_prime_number(n, (int)(_sqrt_recursion(n)));
+	return (_isy_prime_number(n, (int)(_sqrt_recursion(n))));
 }
