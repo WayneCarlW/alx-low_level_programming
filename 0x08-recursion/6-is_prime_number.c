@@ -13,7 +13,7 @@ int _is_prime_number(int n, int div)
 	
 	if (n <= 1)
 		return (0);
-	return (is_prime_number(n, init));
+	return (_is_prime_number(n, init));
 }
 /**
  * _is_prime - Checks if a number is prime
