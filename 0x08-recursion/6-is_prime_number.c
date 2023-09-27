@@ -4,10 +4,9 @@
  * is_prime_number - Returns true if n is prime and otherwise false
  *
  * @n: number to be tetsted
- * @div: divisibility checker
  * Return: 1 when n is prime and 0 when n is not prime
  */
-int is_prime_number(int n, int div)
+int is_prime_number(int n);
 {
 	int init = n / 2;
 	
