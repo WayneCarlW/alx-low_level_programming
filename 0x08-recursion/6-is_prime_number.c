@@ -6,7 +6,7 @@
  * @n: number to be tetsted
  * Return: 1 when n is prime and 0 when n is not prime
  */
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	int init = n / 2;
 	
