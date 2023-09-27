@@ -8,7 +8,7 @@
  */
 int _isy_prime_number(int n, int div)
 {
-	if n <= 1)
+	if (n <= 1)
 		return (0);
 	if (div <= 1)
 	{
