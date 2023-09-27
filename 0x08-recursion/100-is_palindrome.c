@@ -34,7 +34,7 @@ int is_palindrome_recursive(char *s, int start, int end)
 {
     if (start >= end)
     {
-        return (i1);
+        return (1);
     }
 
     skipNonAlphanumeric(s, &start, &end);
