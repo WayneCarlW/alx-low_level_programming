@@ -1,60 +1,57 @@
-#include <stdio.h>
 #include "main.h"
-#include <string.h>
-#include <stdbool.h>
-/**
- * skipNonAlphanumeric - helper function to skip all the non alphanumeric
- * characters
- *
- * @s: pointer to character in string
- * @start: starting point
- * @end: ending point
- * Return: nothing
- */
-void skipNonAlphanumeric(char *s, int *start, int *end)
-{
-    while (*start < *end && !isalnum(s[*start]))
-    {
-        (*start)++;
-    }
-    while (*start < *end && !isalnum(s[*end]))
-    {
-        (*end)--;
-    }
-}
-/**
- * is_palindrome_recursive - checks if string is palindrome
- *
- * @s: string to be checked
- * @start: beginning from
- * @end: ending at
- * Return: 1 if true 0 otherwise
- */
-int is_palindrome_recursive(char *s, int start, int end)
-{
-    if (start >= end)
-    {
-        return (1);
-    }
 
-    skipNonAlphanumeric(s, &start, &end);
-
-    if (tolower(s[start]) != tolower(s[end]))
-    {
-        return (0);
-    }
-    return is_palindrome_recursive(s, start + 1, end - 1);
-}
 /**
- * is_palindrome - calls is_palindrome_recursive with the appropriate starting
- * and ending indices
- *
- * @s: pointer to a character in the string
- * Return: 1 when palindrome and 0 otherwise
- */
+* is_palindrome - returns true if the given string is a palindrome
+*@s: string to check
+*Return: true if the given string is a palindrome
+*/
+
 int is_palindrome(char *s)
 {
-    int len = strlen(s);
+	int index = 0;
+	int len = find_strlen(s);
 
-    return (is_palindrome_recursive(s, 0, len - 1));
+	if (!(*s))
+		return (1);
+
+	return (check_palindrome(s, len, index));
+}
+
+/**
+ * find_strlen - Returns the length of a string.
+ * @s: The string to be measured.
+ *
+ * Return: The length of the string.
+ */
+int find_strlen(char *s)
+{
+	int len = 0;
+
+	if (*(s + len))
+	{
+		len++;
+		len += find_strlen(s + len);
+	}
+
+	return (len);
+}
+
+/**
+ * check_palindrome - Checks if a string is a palindrome.
+ * @s: The string to be checked.
+ * @len: The length of s.
+ * @index: The index of the string to be checked.
+ *
+ * Return: If the string is a palindrome - 1.
+ *         If the string is not a palindrome - 0.
+ */
+int check_palindrome(char *s, int len, int index)
+{
+	if (s[index] == s[len / 2])
+		return (1);
+
+	if (s[index] == s[len - index - 1])
+		return (check_palindrome(s, len, index + 1));
+
+	return (0);
 }
