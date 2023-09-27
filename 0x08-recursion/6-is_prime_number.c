@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 /**
  * _isy_prime_number - Returns true if n is prime and otherwise false
  *
