@@ -1,5 +1,6 @@
 #include "main.h"
 #include <math.h>
+int _is_prime(int n, int init);
 /**
  * is_prime_number - Returns true if n is prime and otherwise false
  *
@@ -12,7 +13,7 @@ int is_prime_number(int n)
 	
 	if (n <= 1)
 		return (0);
-	return (is_prime_number(n));
+	return (_is_prime(n, init));
 }
 /**
  * _is_prime - Checks if a number is prime
