@@ -18,7 +18,7 @@ int _isy_prime_number(int n, int div)
 	{
 		return (0);
 	}
-	return (_is_prime_number(n, div - 1));
+	return (_isy_prime_number(n, div - 1));
 
 }
 /**
