@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * _strncat - appends n contents of src to dest
  *
