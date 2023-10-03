@@ -9,7 +9,7 @@
  * @c: char for initialization
  * Return: NULL if size = 0; pointer to the array or NULL when malloc fails
  */
-char *create_array(unsigned in size, char c)
+char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
 
