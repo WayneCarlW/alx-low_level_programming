@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stddef.h>
+#include <string.h>
+#include <stdlib.h>
 /**
  * _strdup - returns apointer to a string which is the duplicate of str
  *
