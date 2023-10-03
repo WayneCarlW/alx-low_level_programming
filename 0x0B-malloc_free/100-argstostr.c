@@ -28,6 +28,7 @@ char *argstostr(int ac, char **av)
 			tl_lent += strlen(av[i]) + 1;
 		}
 	}
+	str = (char *)malloc(tl_lent + 1);
 
 	if (str != NULL)
 	{
