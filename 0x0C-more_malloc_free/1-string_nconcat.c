@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * string_nconcat - concatenates the first n strings of s2 to s1 in a new
  * memory location
