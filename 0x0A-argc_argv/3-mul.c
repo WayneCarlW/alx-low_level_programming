@@ -9,7 +9,6 @@
 int main(int argc, char **argv)
 {
 	int mul;
-	int i, j;
 
 	if (argc <= 2)
 	{
