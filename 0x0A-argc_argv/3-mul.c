@@ -11,15 +11,13 @@ int main(int argc, char **argv)
 	int mul;
 	int i, j;
 
-	if (argc == 1)
+	if (argc <= 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	i = atoi(argv[1]);
-	j = atoi(argv[2]);
-	mul = i * j; 
+	mul = atoi(argv[1]) * atoi(argv[2]); 
 	
 	printf("%d\n", mul);
 	return (0);
