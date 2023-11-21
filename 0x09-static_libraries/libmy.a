@@ -1,0 +1,214 @@
+!<arch>
+0-isupper.c/    0           0     0     644     165       `
+#include <stdio.h>
+/**
+ * _isupper - checks if a character is in uppercase
+ * @c: character to be checked
+ * Return: 0 if upper 1 if not
+ */
+int _isupper(int c)
+{
+}
+
+0-memset.c/     0           0     0     644     260       `
+#include <stdio.h>
+/**
+ * _memset - copies a string to a particular block of memory
+ * @s: pointer to a string character
+ * @b: character to be copied
+ * @n: number of memory blocks
+ * Return: 0 (success)
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+}
+0-strcat.c/     0           0     0     644     197       `
+#include <stdio.h>
+/**
+ * _strcat - concatenates a string to another
+ * @dest: desstination string
+ * @src: source of the string
+ * Return: 0 (success)
+ */
+char *_strcat(char *dest, char *src)
+{
+}
+
+1-isdigit.c/    0           0     0     644     192       `
+#include <stdio.h>
+/**
+ * _isdigit - returns 1 id the character is a digit and 0 otherwise
+ * @c: the character to be checked
+ * Return: 1 if digit and 0 otherwise
+ */
+int _isdigit(int c)
+{
+}
+1-strncat.c/    0           0     0     644     293       `
+#include <stdio.h>
+/**
+ * _strncat - concatenates n number of characters of a string
+ * @n: number of characters to be concatenated
+ * @dest: destination of the concatenated string
+ * @src: source of the string to be copied
+ * Return: null
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+}
+
+100-atoi.c/     0           0     0     644     154       `
+#include <stdio.h>
+/**
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
+ * Return: the converted value
+ */
+int _atoi(char *s)
+{
+}
+2-strchr.c/     0           0     0     644     215       `
+#include <stdio.h>
+/**
+ * _strchr - breaks down strings into individual characters
+ * @s: pointer to a character in a string
+ * @c: Individual character
+ * Return: broken down
+ */
+char *_strchr(char *s, char c)
+{
+}
+
+2-strlen.c/     0           0     0     644     162       `
+#include <stdio.h>
+/**
+ * _strlen - finds the length  of a string
+ * @s: pointer to a character in a string
+ * Return: String length
+ */
+int _strlen(char *s)
+{
+}
+2-strncpy.c/    0           0     0     644     194       `
+#include <stdio.h>
+/**
+ * _puts - prints a string and a new line to stdout
+ * 
+ * @s: string to be printed
+ * Return: non-negative number on success or EOF otherwise
+ */
+void _puts(char *s)
+{
+}
+3-islower.c/    0           0     0     644     183       `
+#include <stdio.h>
+/**
+ * _islower - checks for lowercase character
+ * @c: ascii value of a character to be checked
+ * Return: nonzero if true 0 otherwise
+ */
+int _islower(int c)
+{
+}
+
+3-puts.c/       0           0     0     644     165       `
+#include <stdio.h>
+/**
+ * _puts - prints a string to standard output
+ * @s: string to be printed
+ * Return: a nonnegative number if true
+ */
+void _puts(char *s)
+{
+}
+
+3-strcmp.c/     0           0     0     644     223       `
+#include <stdio.h>
+/**
+ * _strcmp - compares two strings
+ * @s1: First string
+ * @s2: second string
+ * Return: an integer less,greater or equal to 0 depending on the matching quantum
+ */
+int _strcmp(char *s1, char *s2)
+{
+}
+
+3-strspn.c/     0           0     0     644     347       `
+#include <stdio.h>
+/**
+ * _strspn - calculates the length of the initial segment of s which
+ * entirely consists of bytes in accept
+ * @s: string to be checked
+ * @accept: test string
+ * Return: The number of bytes of the initial segment of s which
+ * entirely consists of the bytes from accept
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+}
+
+4-isalpha.c/    0           0     0     644     182       `
+#include <stdio.h>
+/**
+ * _isalpha - checks for an alphanumeric character
+ * @c: ascii value of character to be checked
+ * Return: 1 if alpha 0 otherwise
+ */
+int _isalpha(int c)
+{
+}
+4-strpbrk.c/    0           0     0     644     260       `
+#include <stdio.h>
+/**
+ * _strpbrk - locates the first occurrence in s of any bytes in accept
+ * @s: string to be operated on
+ * @accept: test string
+ * Return: pointer to the matching byte in s and NULL otherwise
+ */
+char *_strpbrk(char *s, char *accept)
+{
+}
+5-strstr.c/     0           0     0     644     270       `
+#include <stdio.h>
+/**
+ * strstr - finds the first accurrence of the substring needle in the string haystack
+ * @haystack: string
+ * @needle: test substring
+ * Return: pointer to the beginning of the located substring
+ */
+char *_strstr(char *haystack, char *needle)
+{
+}
+6-abs.c/        0           0     0     644     172       `
+#include <stdio.h>
+/**
+ * _abs - returns the absolute value of an integer
+ * @n: Integer to be converted to absolute
+ * Return: absolute value of n
+ */
+int _abs(int n)
+{
+}
+9-strcpy.c/     0           0     0     644     206       `
+#include <stdio.h>
+/**
+ * _strcpy - copies the contents of string src to dest
+ * @src: source string
+ * @dest: destination string
+ * Return: pointer to the dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+}
+_putchar.c/     0           0     0     644     147       `
+#include <stdio.h>
+/**
+ * _putchar - prints a character to stdout
+ * @c: character to be printed
+ * Return: character
+ */
+int _putchar(char c)
+{
+}
+
