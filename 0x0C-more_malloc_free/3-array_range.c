@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
+#include <string.h>
 /**
  * array_range - creates an array of integers
  * @min: minimum value of the elements
