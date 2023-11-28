@@ -4,7 +4,7 @@
 /**
  * print_dog - prints a a struct dog
  *
- * @struct dog - Julien's dog object
+ * @d: Julien's dog object
  * Return: nothing
  */
 void print_dog(struct dog *d)
