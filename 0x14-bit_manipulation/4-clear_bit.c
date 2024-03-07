@@ -25,13 +25,13 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	unsigned long int *number = n;
 	unsigned int tag = index;
 
-	/**Back to program
+	/**
+	 * Back to program
 	 * Check for error
 	 */
 	if (tag >= (sizeof(unsigned long int) * 8))
 		return (-1);
 
 	*number &= ~(1 << tag);
-	
 	return (1);
 }
