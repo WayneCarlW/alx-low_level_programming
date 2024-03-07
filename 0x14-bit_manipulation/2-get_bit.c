@@ -1,32 +1,35 @@
 #include "main.h"
 
+
+
+/******************START*****************/
 /**
- * set_bit - function: sets bit in position to one (1).
- * @n:pointer: shows at the bit.
- * @index:shows the index to be set.
+ * get_bit - func:finds value of bit at an index.
+ * @n:bit: the bit itself.
+ * @index: index, all indices start at zero(0).
  *
- * Return: On success, 1 is returned
- *         Elsewhere we get -1 when on failure.
+ * Return: for if  an error occurs
+ *         Elsewhre bit at index.
+ *
+ *
+ * ALX PROJECTS
  */
 
 
 
-int set_bit(unsigned long int *n, unsigned int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	/*set new constants to work with*/
-	/**
-	 * number = n.
-	 * tag = index.
-	 */
-	unsigned long int *number = n;
+	/**set new constants**/
+	unsigned long int number = n;
 	unsigned int tag = index;
 
-	if (number == NULL || (tag > (sizeof(unsigned long int) * 8) - 1))
+	/******Check if index is out of range*****/
+	if (tag >= (sizeof(unsigned long int) * 8))
 		return (-1);
+	/*Error, Index out of range*/
 
-	/*Check*/
-	*number |= (1 << tag);
-
-	/*Return Success*/
+	if ((number & (1 << tag)) == 0)
+		return (0);
 	return (1);
 }
+/******************STOP*******************/
